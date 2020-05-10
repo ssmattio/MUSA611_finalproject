@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div id="intro">
+        <h1>Covid-19: Cases through Time</h1>
+        <p class="main">In January 2020, the first confirmed case of Coronavirus,
+        or Covid-19, was confirmed in the United States. Two months later, the
+      number of cases began to increase rapidly, causing most states to declare
+    Shelter-in-Place policies and shut down non-essential businesses.</p>
+        <p>This application shows the number of cases by province and country. Use the slider
+        to see how coronavirus hotspots change as time goes on</p>
+      </div>
+
+<div data-current-date-display></div>
+      <ul id="date-list"></ul>
+    </div>
+    <!-- Map -->
+    <div id="map" class="map"></div>
+
+    <!-- Time Slider -->
+  <div class="map-overlay top">
+    <div class="map-overlay-inner">
+      <h4>Cases Over Time</h4>
+      <label id="dateLabel"></label>
+      <input id="slider" type="range" min="0" max="11" step="1" value="0" />
+    </div>
+  </div>
+
+    <!-- Javascript Imports -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <script src="js/covid_cases_geo.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
